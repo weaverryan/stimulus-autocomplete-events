@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stimulus-autocomplete Testing</title>
+    <script src="/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div
+        class="mx-5 my-5 d-flex flex-column"
+        data-controller="autocomplete autocomplete-transition"
+        data-autocomplete-url-value="/suggestions.html"
+        data-autocomplete-skip-hidden-property-value="1"
+        data-action="toggle->autocomplete-transition#toggle"
+    >
+        <input data-autocomplete-target="input">
+
+        <div
+            data-autocomplete-target="results"
+            data-autocomplete-transition-target="results">
+        </div>
+    </div>
+</body>
+</html>

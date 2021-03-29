@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "stimulus": "^2.0.0",
+    "stimulus-autocomplete": "https://github.com/weaverryan/stimulus-autocomplete#toggle-event-always",
+    "stimulus-use": "^0.24.0-1",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development --open"
+  }
+}
